@@ -1,0 +1,884 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body{
+    font-size: 16px;
+    
+	color:#463F3A;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+	line-height: 27px;
+	font-size:17px;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+    color: #F55856;
+}
+
+span, b > a{
+    color: #F55856;
+}
+
+.view{
+    color: #F55856;
+    font-size: 18px;
+}
+.view:hover,  #post-area  b >  a:hover{
+    text-decoration: underline;
+}
+
+
+/*==================================================================================
+            ==================/ header-area css /================
+==================================================================================*/
+#header-area{
+    background: #fff;
+    padding: 10px 0 0 ;
+    border-top: 5px solid #F55856;
+}
+
+#header-area span{
+    color: #000;
+}
+
+
+
+
+/*==================================================================================
+            ==================/ main-menu-area css /================
+==================================================================================*/
+#main-menu-area{
+    background: #F5F6F1;
+    padding: 35px 0 0;
+    width: 100%;
+}
+
+#main-menu-area b{
+    color:#F55856;
+    font-size: 19px;
+    margin-left: 15px;
+}
+
+#main-menu-area .navbar{margin-bottom: 0;
+    margin-top: 30px;
+}
+
+#main-menu-area .icon-bar{
+    background: #000;
+}
+
+#main-menu-area .navbar-nav, #main-menu-area .navbar-nav>li{
+    float: none !important;
+}
+
+#main-menu-area .navbar-nav li a{
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+#main-menu-area a.dropdown-toggle{
+    margin-left: -5px;
+}
+
+#main-menu-area .dropdown-menu {
+    top:49px;
+    left: 0;
+    padding: 0 0;
+    border: 0;
+    border-bottom: 4px solid #F55856;
+    font-size: 12px;
+    border-radius: 0;
+    box-shadow: 0 1px 12px rgba(0,0,0,.175);
+}
+
+#main-menu-area .dropdown-menu li{
+    padding: 0 10px;
+}
+
+#main-menu-area .dropdown-menu li a{
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#main-menu-area .dropdown-menu li a:hover{
+    background: transparent;
+    color: #F55856;
+}
+
+#main-menu-area .dropdown-menu li:hover{
+    background: #FCFBFB;
+}
+
+.navbar-default{
+    background: transparent;box-shadow: none;border-radius: 0;
+    border: 0;
+}
+
+/*==================================================================================
+            ==================/ slider-area css /================
+==================================================================================*/
+#slider-area{
+    margin-top: 40px;
+}
+#slider-area .slider-info a{
+    display: block;
+    background: #f5f6f1;
+    padding:10px 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+#slider-area .slider-info a:hover{
+    color: #fff;
+    background: #F55856;
+}
+#slider-area .slider-info a:hover span{
+    color: #fff;
+}
+
+.carousel-inner .item  img{
+	position:relative;
+}
+
+.carousel-inner .item h1{
+	position:absolute;
+	top:0;
+	left0;
+}
+/*==================================================================================
+            ==================/ portfolio-area css /================
+==================================================================================*/
+#portfolio-area{
+    background: #F8F8F8;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#portfolio-area .title{
+    background-image: url(../images/portfolio-bg.png);
+    background-repeat: repeat-x;
+    background-position: 100% 38px;
+}
+#portfolio-area .title h1{
+    background: #F8F8F8;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+#portfolio-area .single-box .img-effect{
+    position: relative;
+}
+#portfolio-area .single-box .img-effect .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#portfolio-area .single-box .img-effect:hover .overlay{
+    opacity: 0.7;
+}
+#portfolio-area .single-box .img-effect .plus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    top:50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    line-height: 60px;
+    border-radius: 100%;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#portfolio-area .single-box .img-effect:hover {
+    cursor: pointer;
+}
+#portfolio-area .single-box .img-effect:hover .plus{
+    opacity: 1;
+}
+#portfolio-area .single-box{
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#portfolio-area .single-box .caption{
+    background: #fff;
+    padding: 15px;
+    margin-top: 0;
+    border: 1px solid #F1F1F1;
+}
+#portfolio-area .single-box h2{
+    margin-top: 0;
+}
+
+#portfolioSliders{
+    position: relative;
+}
+
+#portfolioSliders .controls a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    top: -5px;
+    right: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#portfolioSliders .controls a.left {
+    margin-right: 25px;
+    display: inline-block;
+}
+#portfolioSliders a.right{}
+
+#portfolioSliders .controls a:hover{
+    background: #F55856;
+}
+
+/*==================================================================================
+            ==================/ post-area css /================
+==================================================================================*/
+#post-area {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background: #FDFDFD;
+}
+#post-area .title{
+    background-image: url(../images/portfolio-bg.png);
+    background-repeat: repeat-x;
+    background-position: 100% 38px;
+}
+
+#post-area .title h1{
+    background: #FDFDFD;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+#post-area  p{
+    margin-top: 10px;
+}
+
+#post-area .single-box{
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#post-area .single-box img{
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+#post-area .single-box img:hover{
+    opacity:0.6;
+}
+
+/*====== postSlider css ======*/
+#postSliders{
+    position: relative;
+}
+
+#postSliders .controls a{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    top: -5px;
+    right: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#postSliders .controls a.left{
+    margin-right: 25px;
+    display: inline-block;
+}
+
+#postSliders .controls a:hover{
+    background: #F55856;
+}
+
+
+/*======== skills testimonials css ======*/
+#post-area .media,
+#post-area .media-body{
+    overflow: visible;
+}
+.skills{
+    margin-bottom: 35px;
+}
+#post-area .skills .title h1{
+    padding-left: 0;
+}
+.testimonials{
+    margin-bottom: 50px;
+}
+.testimonials .media-body{
+    position: relative;
+}
+
+.testimonials .media-body::before{
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    background: #F55856;
+    content: "";
+    bottom: -30px;
+    z-index: 2;
+}
+.testimonials .media-body::after{
+    position: absolute;
+    width: 100%;
+    border: 1px dotted #ddd;
+    content: "";
+    bottom: -28px;
+    left: 0;
+    z-index: 1;
+}
+
+.single-progress .progress{
+    height: 35px;
+    border-radius: 0;
+    background: #FDFDFD;
+    border: 1px solid #eee;
+    box-shadow: none;
+}
+
+
+
+/*======== sponsorSlider css======*/
+#sponsorSlider{
+    position: relative;
+}
+
+#sponsorSlider .controls a.left{
+    margin-right: 25px;
+    display: inline-block;
+}
+
+#sponsorSlider .controls a:hover{
+    background: #F55856;
+}
+#sponsorSlider {
+    margin-top: 15px;
+}
+#sponsorSlider .controls{
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    margin-left: -50px;
+    bottom: -50px;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#sponsorSlider .controls a{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: #000;
+    display: inline-block;
+    color: #fff;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+#sponsorSlider .controls a.left{
+    margin-right: -5px;
+}
+
+#sponsorSlider .item a{
+    display: block;
+    background: #fff;
+    padding: 30px;
+    border-bottom: 3px solid #eee;
+}
+#sponsorSlider .item a:hover{
+    border-bottom: 3px solid #F55856;
+}
+
+
+/*==================================================================================
+            ==================/ info-area css /================
+==================================================================================*/
+#info-area{
+    background: #F2F2F0;
+    width: 100%;
+    padding: 25px 0;
+}
+#info-area h1{
+    font-size: 39px;
+    text-shadow: 1px 4px 2px white  ;
+}
+#info-area span a{
+    color: #F55856;
+}
+
+
+
+/*==================================================================================
+            ==================/ footer-top-area css /================
+==================================================================================*/
+#footer-top-area{
+    background: #47403A;
+    padding: 65px 0;
+    color: #fff;
+    font-size:18px;
+}
+
+#footer-top-area a button.btn{
+    background: rgba(0,0,0,0.3);
+    border-radius: 0;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+#footer-top-area a button.btn:hover{
+    background: #C9524F;
+}
+
+#footer-top-area ul{
+    margin-bottom: 35px;
+}
+
+#footer-top-area ul li a{
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#footer-top-area .footer-button{
+    text-align: right;
+}
+
+#footer-top-area ul li a:hover{
+    color:#F55856;
+}
+
+
+/*==================================================================================
+            ==================/ footer-area css /================
+==================================================================================*/
+#footer-area{
+    background: #3B3532;
+    padding: 15px 0 0;
+    color: #fff;
+}
+
+.social-icon a{
+    color: #fff;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#footer-area  span a {
+    color: #F55856;
+}
+
+
+
+/*=================================================================================
+***********************************************************************************
+******************************   other pages css  *********************************
+***********************************************************************************
+==================================================================================*/
+
+
+/*==================================================================================
+            ==================/ news-menu-page css /================
+==================================================================================*/
+#news-page{
+    background:#F8F8F8;
+    overflow:hidden;
+    border-bottom:1px solid #E6E6E6;
+    padding-top: 60px;
+}
+
+
+#news-page img{
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#news-page img:hover{
+    opacity: 0.8;
+}
+#news-page aside .well{
+    border-radius:0;
+    box-shadow:none;
+    background:#fff;
+    border:0;
+    padding-top:0;
+    padding-left:20px;
+    margin-left:50px;
+}
+#news-page .single-news{
+    margin-bottom: 30px;
+}
+/*==================================================================================
+            ==================/ portfolio-page css /================
+==================================================================================*/
+#page-menu{
+	background:#FDFDFD;
+	overflow:hidden;
+	border-bottom:1px solid #E6E6E6;
+}
+#page-menu ol{
+	margin-bottom:0;
+}
+#page-menu p{
+	padding:8px 0 0;
+}
+#page-menu .breadcrumb{
+	margin-bottom:0;
+	background-color:transparent;
+	padding-top:10px;
+}
+#portfolio-page{
+    background: #F8F8F8;
+	padding-top:60px;
+}
+#portfolio-page .single-item{
+    background: #fff;
+	margin-bottom:30px;
+	max-width:380px;
+	margin-right:auto;
+	margin-left:auto;
+}
+#portfolio-page .single-item .img-effect{
+    position: relative;
+}
+#portfolio-page .single-item .img-effect:hover{
+    cursor: pointer;
+}
+#portfolio-page .single-item .img-effect img{}
+#portfolio-page .single-item .img-effect .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#portfolio-page .single-item .img-effect:hover .overlay{
+    opacity: 0.5;
+}
+#portfolio-page .single-item .img-effect a{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    top:50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    line-height: 60px;
+    border-radius: 100%;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#portfolio-page .single-item .img-effect:hover a{
+    opacity: 1;
+}
+.single-item .item-info{
+    padding:0 15px 10px;
+}
+
+/*=================================================================================
+            ==================/ contact-page css /================ %
+==================================================================================*/
+#contact-page{
+    width: 100%;
+    background: #FDFDFD;
+}
+#contact-page form input,
+#contact-page form textarea{
+    border: 1px solid #f1f1f1;
+    border-radius: 0;
+    box-shadow: none;
+    height: 45px;
+    margin-bottom: 15px;
+}
+#contact-page form textarea{
+    height: 150px;
+}
+#contact-page form input:focus,
+#contact-page form textarea:focus{
+    border: 1px solid #ccc;
+}
+#contact-page address strong{
+    font-weight: 400;
+}
+.tags a{
+    background: #f1f1f1;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+.tags a:hover{
+	background:#F55856;
+	color:#fff;
+}
+
+
+/*==================================================================================
+            ==================/ pages-page css /================ %
+==================================================================================*/
+#pages-page{
+	background:#F8F8F8;
+	padding-top:30px;
+}
+#pages-page aside .well{
+	border-radius:0;
+	box-shadow:none;
+	background:#fff;
+	border:0;
+	margin-top:10px;
+	padding-top:0;
+	padding-left:20px;
+	margin-left:50px;
+}
+
+#pages-page img{
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+#pages-page img:hover{
+    opacity: 0.8;
+}
+
+/*==================================================================================
+            ==================/ Our-team-page css /================ %
+==================================================================================*/
+#our-team-page{
+	background:#FDFDFD;
+	padding-top:10px;
+}
+#our-team-page .single-team {
+	padding-bottom:30px;
+	border-bottom:3px double #DFDFDF;
+	margin-top:40px;
+	max-width:380px;
+	margin-right:auto;
+	margin-left:auto;
+}
+#our-team-page .single-team img {
+	border:5px solid #463F3A;
+}
+#our-team-page .indicator-icon{
+	background:#F55856;
+	width:60px;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	margin:25px auto 0 ;
+}
+#our-team-page .indicator-icon i{
+	color:#fff;
+	display:inline-block;
+	font-size:30px;
+	padding-top:15px;
+}
+#our-team-page  .single-team  h4{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#our-team-page  .single-team  p{
+	padding: 15px;
+    font-size: 17px;
+}
+#our-team-page  .single-team  .designation{
+	display:inline-block;
+	background:#F55856;
+	padding:5px 15px;
+	color:#fff;
+}
+#our-team-page  .social-team{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#our-team-page  .social-team a{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background:#463F3A ;
+	display:inline-block;
+	color:#fff;
+	font-size:20px;
+}
+#our-team-page  .social-team a:hover{
+	background:#F55856;
+}
+#our-team-page  .social-team i{}
+
+/* pagination css*/
+.pagination{}
+.pagination li{}
+.pagination li a{
+    background: #47403A;
+    color: #fff;
+    margin: 1px;
+    border: 0;
+    border-radius: 0;
+}
+
+.pagination li a.active{
+    background: #F55856;
+}
+.pagination li a:hover{
+    background: #F55856;
+    color: #fff;
+}
+.pagination li a:last-child{
+    border-radius: 0;
+}
+.pagination li a:last-child:focus{
+    background: #47403A;
+    color: #fff;
+}
+.pagination li a.static{
+    background: #47403A;
+    color: #fff;
+    border-radius: 0;
+}
+
+
+/*==================================================================================
+            ==================/ responsive css /================ %
+==================================================================================*/
+/*Desktop : Medium : 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/*Tablet layout: 768px. */
+*@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/*Mobile layout: 320px. */
+@media only screen and (max-width: 767px){
+    #main-menu-area .list-inline>li {
+        display: block;
+        padding-right: 5px;
+        padding-left: 5px;
+        text-align: left;
+        border-top: 1px solid #F0F0F0;
+    }
+    #main-menu-area .navbar-nav li a{
+        font-size: 15px;
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #main-menu-area .navbar-nav li ul li a{
+        display: block;
+    }
+    #main-menu-area  b{
+        display: none;
+    }
+    #main-menu-area{
+        padding: 0 0 5px;
+    }
+    #main-menu-area .navbar {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    #main-menu-area .navbar-toggle {
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 0;
+        border: 1px solid #fff;
+    }
+    #footer-top-area {
+        padding: 20px 0;
+        font-size:14px;
+    }
+    #footer-top-area ul{
+        margin-bottom: 0;
+    }
+    #footer-top-area ul li a{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    #footer-top-area, #footer-top-area .footer-button {
+        text-align: center;
+    }
+    #footer-area, #footer-area .col-sm-6.text-right {
+        text-align: center;
+    }
+    #footer-top-area img{
+        margin-bottom: 15px;
+    }
+}
+
+/*Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+}
+
+
+
+
+
+
